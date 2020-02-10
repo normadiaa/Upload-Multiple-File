@@ -21,7 +21,7 @@
 // Route::get('saya','SayaController@saya');
 // Route::post('upload','SayaController@upload')->name('upload');
 
-Route::get('/file','FileController@index');
+Route::get('/','FileController@index');
 Route::post('save','FileController@save')->name('save');
 Route::get('/displayfile','FileController@display')->name('display');
 Route::get('/displaymultiplefile/{file_id}','FileController@displayfile')->name('displayfile');

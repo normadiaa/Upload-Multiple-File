@@ -47,7 +47,7 @@ class FileController extends Controller
         );
         data::create($data);
  
-        return Redirect::to("file")
+        return Redirect::to("/")
         ->withSuccess('Great! files has been successfully uploaded.');
     }
 
