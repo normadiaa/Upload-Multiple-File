@@ -59,7 +59,7 @@ class FileController extends Controller
 
     public function displayfile($file_id)
     {
-        $file = documents::where('file_id',$file_id)->first();
+        $file = documents::where('file_id',$file_id)->get();
         return view('displayfile',compact('file'));
     }
 }
